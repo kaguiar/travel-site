@@ -9,8 +9,9 @@ gulp.task('watch', function () {
       baseDir: "app"
     },
     injectChanges: true,
-    browser: 'microsoft-edge:http://localhost:3000'
-    //browser: 'chrome' //:http://localhost:3000'
+    watchEvents: ["add", "change", 'unlink'],
+  //browser: 'microsoft-edge:http://localhost:3000'
+    browser: 'chrome' //:http://localhost:3000'
     //browser: 'iexplore' //:http://localhost:3000'
   });
 
@@ -26,5 +27,5 @@ gulp.task('watch', function () {
 gulp.task('cssInject', ['styles'], function () {
   return browserSync.reload();
   //return gulp.src('.app/temp/styles/styles.css')
-  //  .pipe(browserSync.stream({ match: '**/*.css' }));
+  //  .pipe(browserSync.stream());
 });
