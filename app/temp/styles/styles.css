@@ -484,6 +484,8 @@ img {
     text-align: center;
   }
 
+@media (min-width: 1200px) {
+
 .large-hero__title {
     font-weight: 300;
     color: #2f5572;
