@@ -659,15 +659,14 @@ img {
     display: table;
   }
 
-.row__gutters {
+@media (min-width: 800px) {
+    .row__gutters {
       padding-right: -65px;
     }
 
-.row__gutters > div {
+    .row__gutters > div {
       padding-right: 65px;
     }
-
-@media (min-width: 800px) {
 
     .row__medium-4 {
       float: left;
