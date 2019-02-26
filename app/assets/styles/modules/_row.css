@@ -1,7 +1,5 @@
 .row {
   @mixin clearfix;
-
-  @mixin atMedium {
     &__gutters {
       padding-right: -65px;
     }
@@ -9,6 +7,8 @@
     &__gutters > div {
       padding-right: 65px;
     }
+
+  @mixin atMedium {
 
     &__medium-4 {
       float: left;
